@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <div>
+            <label for="cityInput">Enter city:</label>
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+        <div id="loading" style="display: none;">Loading...</div>
+        <div id="errorMessage" class="error" style="display: none;"></div>
+        <div id="weatherResult">
+            <div class="weather-icon">
+                <img id="weatherIcon" src="" alt="Weather Icon" style="display: none;"/>
+            </div>
+            <div id="weatherDetails">
+                <p id="temperature"></p>
+                <p id="weatherDescription"></p>
+                <p id="humidity"></p>
+                <p id="windSpeed"></p>
+                <p id="feelsLike"></p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p >Data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
